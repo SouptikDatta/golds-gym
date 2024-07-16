@@ -17,7 +17,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
             className="exercise-video"
             href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
             <Box>
