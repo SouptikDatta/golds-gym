@@ -14,7 +14,24 @@ body {
   width: 0px;
 }
 
-.right-arrow,
+.slick-arrow.slick-prev {
+  left: 10px;
+}
+
+.slick-arrow.slick-next {
+  right: 10px;
+}
+
+.slick-arrow {
+  display: block;
+  background: #FF2625;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 1;
+}
+
+
+/* .right-arrow,
 .left-arrow {
   cursor: pointer;
   background: transparent;
@@ -46,7 +63,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .detail-image {
   width: 729px;
