@@ -5,26 +5,29 @@ import ExerciseCard from './ExerciseCard';
 import BodyPart from './BodyPart';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => {
-  // Custom arrow components
   const NextArrow = ({ onClick }) => (
     <div
       className="slick-arrow slick-next"
-      style={{ display: 'block', background: '#FF2625', borderRadius: '50%', padding: '10px', right: '10px', zIndex: '1' }}
       onClick={onClick}
-    />
+    >
+      <GrFormNext style={{ display: 'flex', width:'30px', height:'30px', color:'white', background: '#FF2625', borderRadius: '50%', zIndex: '1' }}
+        size={25}/>
+    </div>
   );
 
   const PrevArrow = ({ onClick }) => (
     <div
       className="slick-arrow slick-prev"
-      style={{ display: 'block', background: '#FF2625', borderRadius: '50%', padding: '10px', left: '10px', zIndex: '1' }}
       onClick={onClick}
-    />
+    >
+      <GrFormPrevious style={{ display: 'flex', width:'30px', height:'30px', color:'white', background: '#FF2625', borderRadius: '50%', zIndex: '1' }}
+        size={25}/>
+    </div>
   );
 
-  // Slick slider settings
   const settings = {
     infinite: false,
     speed: 500,

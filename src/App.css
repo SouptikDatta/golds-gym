@@ -73,11 +73,10 @@ body {
 .hero-banner-img {
   position: absolute;
   right: 40px;
-  top: 0px;
+  top: 120px;
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
 }
 
 .exercise-card {
@@ -157,5 +156,32 @@ body {
 @media screen and (max-width:400px) {
   .exercise-card {
     width: 280px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 1px #FF2625, 0 0 2px #FF2625, 0 0 5px #FF2625, 0 0 10px #FF2625;
+  }
+  100% {
+    box-shadow: 0 0 5px #FF2625, 0 0 10px #FF2625, 0 0 10px #FF2625, 0 0 12px #FF2625;
+  }
+}
+
+@keyframes colorChange {
+  0%, 50% {
+    color: black;
+  }
+  50.01%, 100% {
+    color: red;
+  }
+}
+
+@keyframes colorChangeAlt {
+  0%, 50% {
+    color: red;
+  }
+  50.01%, 100% {
+    color: black;
   }
 }
