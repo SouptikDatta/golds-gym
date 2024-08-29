@@ -40,7 +40,7 @@ const ExerciseDetail = () => {
       } catch (error) {
         console.error("Error fetching exercise data: ", error);
       } finally {
-        setLoading(false);  // Stop loading
+        setLoading(false);
       }
     };
     fetchExercisesData();
